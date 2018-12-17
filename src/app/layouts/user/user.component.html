@@ -1,0 +1,31 @@
+<br>
+<br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <ul class="list-group">
+        <li class="list-group-item hoverable">
+          <a [routerLink]="['/users']">Tu Perfil</a>
+        </li>
+        <li class="list-group-item hoverable">
+          <a class="nav-link" href="javascript:;;" [routerLink]="['/products/favourite-products']">
+            <i class="fa fa-heart">
+              <span class="mt-2"> Tus favoritos</span>
+            </i>
+          </a>
+        </li>
+        <li class="list-group-item hoverable">
+          <a class="nav-link" href="javascript:;;" [routerLink]="['/products/cart-items']">
+            <i class="fa fa-shopping-cart">
+              <span class="mt-2"> Tu carrito</span>
+            </i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-sm-8">
+      <router-outlet name="profileOutlet"></router-outlet>
+    </div>
+  </div>
+</div>
